@@ -8,6 +8,11 @@ import org.springframework.stereotype.Component;
 import java.util.Arrays;
 import java.util.Set;
 
+/**
+ * @Description TODO
+ * @Author lsp
+ * @Date 2020/3/23 17:20
+ */
 @Component
 @Order(1)
 public class MyApplicationRunner implements ApplicationRunner {

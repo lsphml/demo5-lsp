@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
+/**
+ * @Description TODO
+ * @Author lsp
+ * @Date 2020/3/23 17:19
+ */
+
 @Api(value="测试swagger2",tags = "测试接口")
 @RestController
 public class HelloController {

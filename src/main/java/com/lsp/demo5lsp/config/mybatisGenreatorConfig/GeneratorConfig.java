@@ -49,7 +49,8 @@ public class GeneratorConfig  extends AbstractGeneratorConfig {
         // strategyConfig.setTablePrefix(new String[]{"sys_","p_association_"});// 此处可以修改为您的表前缀
         //strategyConfig.setTablePrefix("f_examination_","f_");// 此处可以修改为您的表前缀
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
-        strategyConfig.setEntityBooleanColumnRemoveIsPrefix(true);// 是否移除实体前缀
+        // 是否移除实体前缀
+        strategyConfig.setEntityBooleanColumnRemoveIsPrefix(true);
         //父类的位置路径从java下开始写起 com.lsp.demo5lsp.
         strategyConfig.setSuperEntityClass("com.lsp.demo5lsp.base.entity.BaseEntity");
         strategyConfig.setSuperServiceClass("com.lsp.demo5lsp.base.service.IBaseService");

@@ -6,9 +6,14 @@ import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
+/**
+ * @Description TODO
+ * @Author lsp
+ * @Date 2020/3/23 17:21
+ */
 @Component
 @Order(2)
-public class MyCommandLIneRunner implements CommandLineRunner {
+public class MyCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... args)  {
         System.out.println("this is a test of commandLineRunner.......");
