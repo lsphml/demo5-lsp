@@ -20,6 +20,7 @@
         <swagger-ui.version>1.8.7</swagger-ui.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <druid.version>1.1.16</druid.version>
+        <velocity.version>1.7</velocity.version>
     </properties>
 
     <dependencies>
@@ -86,7 +87,19 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis-plus.version}</version>
         </dependency>
+        <!--mybatis-plus代码生成器依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
 
+        <!-- velocity -->
+        <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
