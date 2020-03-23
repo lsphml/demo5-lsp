@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 
 /**
- * @Description swaggerConfig的配置
+ * @Description swaggerConfig的配置,配置完毕后访问 http://localhost:8085/doc.html即可
  * @Author lsp
  * @Date 2020/3/21 14:41
  */

@@ -1,8 +1,8 @@
 spring:
   profiles:
     active: dev
-
 info:
   phone: 1234567
   gender: man
   address: canda
+debug: true
