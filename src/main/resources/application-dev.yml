@@ -68,6 +68,21 @@ spring:
             show-allow: false
       # aop配置
 #      aop-patterns: com.seca.cfencing.core.modular.system.*.dao.*,com.seca.cfencing.core.modular.system.service.*
+# 邮件发送配置
+  mail:
+    host: smtp.126.com
+    username: lsphml@126.com
+    # 密码是邮箱的授权密码，不是登录密码
+    password: lsp890101
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+            required: true
+send:
+  from: ${spring.mail.username}
+  to: ${spring.mail.username}
 
 
 

@@ -5,6 +5,8 @@ import com.lsp.demo5lsp.bean.SystemInfo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,19 +29,27 @@ public class HelloController {
     private SystemInfo systemInfo;
 
     @ApiOperation(value = "hello!",notes = "hello!")
-    @RequestMapping("/hello")
+    @GetMapping("/hello")
     public String hello(){
         return "Hello Springboot!";
     }
 
     @ApiOperation(value = "用户信息查询",notes = "用户信息查询")
-    @RequestMapping("/info")
+    @GetMapping("/info")
     public Information info(){
         return information;
     }
 
+    /**
+     * @Description TODO
+     *  通过@RequestMapping(value = "/sys" , produces = MediaType.APPLICATION_XML_VALUE),可以返回xmlg格式的数据
+      * @param
+     * @Return com.lsp.demo5lsp.bean.SystemInfo
+     * @Author lsp
+     * @Date 2020/3/24 14:08
+     */
     @ApiOperation(value = "系统信息查询",notes = "系统信息查询")
-    @RequestMapping("/sys")
+    @RequestMapping(value = "/sys",produces = MediaType.APPLICATION_JSON_VALUE)
     public SystemInfo sys(){
         return  systemInfo;
     }
