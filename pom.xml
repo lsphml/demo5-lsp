@@ -26,6 +26,8 @@
         <apache-commons.version>3.9</apache-commons.version>
         <mail.version>2.2.5.RELEASE</mail.version>
         <validation.version>2.2.5.RELEASE</validation.version>
+        <assertj.version>3.14.0</assertj.version>
+        <jackson.version>2.10.2</jackson.version>
     </properties>
 
     <dependencies>
@@ -63,6 +65,15 @@
 <!--                </exclusion>-->
 <!--            </exclusions>-->
         </dependency>
+
+        <!-- assertj 断言调试工具-->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+
 
         <!-- swagger2 -->
         <dependency>
@@ -113,11 +124,18 @@
             <version>${velocity.version}</version>
         </dependency>
 
+        <!--序列化工具，正常情况下fastJson和jackson只需引入一种就可以 -->
         <!-- fastJson -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
+        </dependency>
+        <!-- jackson -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
 
         <!-- apache-commons-lang3 工具包-->

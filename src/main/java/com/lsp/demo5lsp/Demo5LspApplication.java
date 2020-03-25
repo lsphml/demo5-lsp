@@ -7,9 +7,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @Description TODO
+ * @Author lsp
+ * @Date 2020/3/24 16:41
+ */
 @Slf4j
 @SpringBootApplication
-//com.lsp.demo5lsp.base.modular.system.dao
 @MapperScan("com.lsp.demo5lsp.base.modular.*.dao")
 public class Demo5LspApplication {
 
