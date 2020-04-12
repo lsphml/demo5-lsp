@@ -167,6 +167,7 @@
             <version>${validation.version}</version>
         </dependency>
 
+        <!--GoogleAds-->
         <dependency>
             <groupId>com.google.api-ads</groupId>
             <artifactId>google-ads</artifactId>
