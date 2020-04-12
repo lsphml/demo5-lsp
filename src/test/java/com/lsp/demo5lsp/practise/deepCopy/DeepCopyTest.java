@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lsp.demo5lsp.base.BaseUnit;
 import org.apache.commons.lang.SerializationUtils;
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 /**
  * @author lsp
