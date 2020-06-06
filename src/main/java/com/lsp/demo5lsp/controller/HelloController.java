@@ -1,5 +1,6 @@
 package com.lsp.demo5lsp.controller;
 
+import com.lsp.demo5lsp.annotation.MyAnnotaion;
 import com.lsp.demo5lsp.bean.Information;
 import com.lsp.demo5lsp.bean.SystemInfo;
 import io.swagger.annotations.Api;
@@ -50,6 +51,7 @@ public class HelloController {
      */
     @ApiOperation(value = "系统信息查询",notes = "系统信息查询")
     @RequestMapping(value = "/sys",produces = MediaType.APPLICATION_JSON_VALUE)
+    @MyAnnotaion(methodName = "sys")
     public SystemInfo sys(){
         return  systemInfo;
     }
