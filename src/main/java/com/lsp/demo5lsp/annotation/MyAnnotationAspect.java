@@ -1,10 +1,7 @@
 package com.lsp.demo5lsp.annotation;
 
-import org.apache.shiro.aop.MethodInterceptor;
-import org.apache.shiro.aop.MethodInvocation;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
@@ -17,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class MyAnnotationAspect implements MethodInterceptor {
 
     @Pointcut("@annotation(com.lsp.demo5lsp.annotation.MyAnnotaion)")
-    public void methodPointCut(){};
+    public void methodPointCut(){}
 
 //    @Around("methodPointCut()")
 //    public void annotationAround(ProceedingJoinPoint proceedingJoinPoint){
