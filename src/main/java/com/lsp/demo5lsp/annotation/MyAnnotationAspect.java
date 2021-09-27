@@ -2,6 +2,8 @@ package com.lsp.demo5lsp.annotation;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
@@ -16,18 +18,18 @@ public class MyAnnotationAspect implements MethodInterceptor {
     @Pointcut("@annotation(com.lsp.demo5lsp.annotation.MyAnnotaion)")
     public void methodPointCut(){}
 
-//    @Around("methodPointCut()")
-//    public void annotationAround(ProceedingJoinPoint proceedingJoinPoint){
-//        String methodName = proceedingJoinPoint.getSignature().getName();
-//        MyAnnotaion myAnnotaion = proceedingJoinPoint.getSignature().getDeclaringTypeName().getClass().getAnnotation(MyAnnotaion.class);
-//        System.out.println("methodName:"+methodName+"============ myAnnotation:"+myAnnotaion);
-//        try {
-//            proceedingJoinPoint.proceed();
-//        } catch (Throwable throwable) {
-//            throwable.printStackTrace();
-//        }
-//        System.out.println("myAnnotationAspect execute success!");
-//    }
+    @Around("methodPointCut()")
+    public void annotationAround(ProceedingJoinPoint proceedingJoinPoint){
+        String methodName = proceedingJoinPoint.getSignature().getName();
+        MyAnnotaion myAnnotaion = proceedingJoinPoint.getSignature().getDeclaringTypeName().getClass().getAnnotation(MyAnnotaion.class);
+        System.out.println("methodName:"+methodName+"============ myAnnotation:"+myAnnotaion);
+        try {
+            proceedingJoinPoint.proceed();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
+        System.out.println("myAnnotationAspect execute success!");
+    }
 
     @Override
     public Object invoke(MethodInvocation methodInvocation) throws Throwable {
