@@ -21,7 +21,7 @@
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <druid.version>1.1.16</druid.version>
         <velocity.version>1.7</velocity.version>
-        <fastjson.version>1.2.61</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <shiro.version>1.4.1</shiro.version>
         <apache-commons.version>3.9</apache-commons.version>
         <mail.version>2.2.5.RELEASE</mail.version>
