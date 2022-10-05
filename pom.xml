@@ -27,7 +27,7 @@
         <mail.version>2.2.5.RELEASE</mail.version>
         <validation.version>2.2.5.RELEASE</validation.version>
         <assertj.version>3.14.0</assertj.version>
-        <jackson.version>2.10.2</jackson.version>
+        <jackson.version>2.12.6.1</jackson.version>
         <google.ads.version>3.0.1</google.ads.version>
         <jcommander.version>1.78</jcommander.version>
     </properties>
