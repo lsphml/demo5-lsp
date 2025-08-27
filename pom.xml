@@ -23,7 +23,7 @@
         <velocity.version>1.7</velocity.version>
         <fastjson.version>1.2.61</fastjson.version>
         <shiro.version>1.4.1</shiro.version>
-        <apache-commons.version>3.9</apache-commons.version>
+        <apache-commons.version>3.18.0</apache-commons.version>
         <mail.version>2.2.5.RELEASE</mail.version>
         <validation.version>2.2.5.RELEASE</validation.version>
         <assertj.version>3.14.0</assertj.version>
